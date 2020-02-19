@@ -15,7 +15,7 @@
                         <th scope="col">Дни депозита</th>
                         <th scope="col">Процент</th>
                         <th scope="col">Статус</th>
-                        <th scope="col"></th>
+                        <th width="100" scope="col">Действия</th>
                     </tr>
                     </thead>
                     <tbody>

@@ -2,7 +2,7 @@
     <!-- Logo Header -->
     <div class="logo-header" data-background-color="green">
 
-        <a href="" class="logo">
+        <a href="/admin" class="logo">
             <span class="text_logo"> <i class="fad fa-cogs"></i> Кабинет </span>
         </a>
 

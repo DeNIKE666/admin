@@ -10,7 +10,7 @@
                     <thead>
                     <tr>
                         <th scope="col">Название</th>
-                        <th scope="col"></th>
+                        <th width="100" scope="col">Действия</th>
                     </tr>
                     </thead>
                     <tbody>
