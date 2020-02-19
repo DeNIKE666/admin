@@ -1,0 +1,14 @@
+.label-role-permission
+{
+    font-size: 17px;
+    margin-top: -5px;
+    float: right;
+}
+
+.access {
+    color: green;
+}
+
+.denied {
+    color: #ff0000a1;
+}
