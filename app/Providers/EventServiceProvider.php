@@ -2,6 +2,12 @@
 
 namespace App\Providers;
 
+use Alexusmai\LaravelFileManager\Events\DiskSelected;
+use Alexusmai\LaravelFileManager\Events\FilesUploaded;
+use Alexusmai\LaravelFileManager\Events\FilesUploading;
+use Alexusmai\LaravelFileManager\Events\FileUpdate;
+use App\Events\Selected;
+use App\Listeners\FileUpload;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;

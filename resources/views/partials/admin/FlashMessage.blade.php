@@ -1,4 +1,5 @@
 <script>
+
     @if(Session::has('denied_role'))
         $.notify({
             icon: 'fal fa-times',

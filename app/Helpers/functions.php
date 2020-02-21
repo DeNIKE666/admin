@@ -19,3 +19,14 @@ if (!function_exists('getRoles'))
         return user()->getRoleNames()[0];
     }
 }
+
+// Получить настройки
+
+if (!function_exists('settings'))
+{
+    function settings()
+    {
+        return \App\Setting::first();
+    }
+}
+

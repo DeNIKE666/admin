@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="{{ mix('assets/cabinet/atlantis.css') }} ">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,700&display=swap" rel="stylesheet">
 
+    @stack('styles')
+
 </head>
 <body>
 <div class="wrapper">

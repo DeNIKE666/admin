@@ -85,6 +85,26 @@ Route::prefix('admin')->namespace('Admin')->middleware(['auth' , 'role:GlAdmin|a
         Route::get('/delete/{user}', 'UserController@delete')->name('user.delete');
     });
 
+    // Настрйоки проекта
+
+    Route::prefix('others')->middleware(['permission:others'])->group(function () {
+        Route::get('/', 'SettingsController@index')->name('settings');
+        Route::post('/store', 'SettingsController@updateSettings')->name('settings.store');
+        Route::get('/file/manager', 'AdminController@fileManager')->middleware(['permission:fileManager'])->name('f.manager');
+    });
+
+    Route::get('/fm', function () {
+
+        event(new \Alexusmai\LaravelFileManager\Events\FilesUploaded(request()->all()));
+
+        return view('vendor.file-manager.tinymce5');
+    });
+
+
+});
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
 });
 
 Route::prefix('ajax')->namespace('Ajax')->group(function () {

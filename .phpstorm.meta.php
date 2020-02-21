@@ -5,13 +5,15 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2020-02-15 15:08:06.
+    * Generated on 2020-02-21 17:18:45.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
     */
     override(new \Illuminate\Contracts\Container\Container, map([
         '' => '@',
+        'Alexusmai\LaravelFileManager\Services\ACLService\ACLRepository' => \Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository::class,
+        'Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository' => \Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -129,6 +131,7 @@ namespace PHPSTORM_META {
         'filesystem.disk' => \Illuminate\Filesystem\FilesystemAdapter::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
+        'image' => \Intervention\Image\ImageManager::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -157,6 +160,8 @@ namespace PHPSTORM_META {
     ]));
     override(\Illuminate\Container\Container::makeWith(0), map([
         '' => '@',
+        'Alexusmai\LaravelFileManager\Services\ACLService\ACLRepository' => \Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository::class,
+        'Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository' => \Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -274,6 +279,7 @@ namespace PHPSTORM_META {
         'filesystem.disk' => \Illuminate\Filesystem\FilesystemAdapter::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
+        'image' => \Intervention\Image\ImageManager::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -302,6 +308,8 @@ namespace PHPSTORM_META {
     ]));
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
+        'Alexusmai\LaravelFileManager\Services\ACLService\ACLRepository' => \Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository::class,
+        'Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository' => \Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -419,6 +427,7 @@ namespace PHPSTORM_META {
         'filesystem.disk' => \Illuminate\Filesystem\FilesystemAdapter::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
+        'image' => \Intervention\Image\ImageManager::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -447,6 +456,8 @@ namespace PHPSTORM_META {
     ]));
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
+        'Alexusmai\LaravelFileManager\Services\ACLService\ACLRepository' => \Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository::class,
+        'Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository' => \Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -564,6 +575,7 @@ namespace PHPSTORM_META {
         'filesystem.disk' => \Illuminate\Filesystem\FilesystemAdapter::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
+        'image' => \Intervention\Image\ImageManager::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -592,6 +604,8 @@ namespace PHPSTORM_META {
     ]));
     override(\App::make(0), map([
         '' => '@',
+        'Alexusmai\LaravelFileManager\Services\ACLService\ACLRepository' => \Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository::class,
+        'Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository' => \Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -709,6 +723,7 @@ namespace PHPSTORM_META {
         'filesystem.disk' => \Illuminate\Filesystem\FilesystemAdapter::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
+        'image' => \Intervention\Image\ImageManager::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -737,6 +752,8 @@ namespace PHPSTORM_META {
     ]));
     override(\App::makeWith(0), map([
         '' => '@',
+        'Alexusmai\LaravelFileManager\Services\ACLService\ACLRepository' => \Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository::class,
+        'Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository' => \Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -854,6 +871,7 @@ namespace PHPSTORM_META {
         'filesystem.disk' => \Illuminate\Filesystem\FilesystemAdapter::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
+        'image' => \Intervention\Image\ImageManager::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -882,6 +900,8 @@ namespace PHPSTORM_META {
     ]));
     override(\app(0), map([
         '' => '@',
+        'Alexusmai\LaravelFileManager\Services\ACLService\ACLRepository' => \Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository::class,
+        'Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository' => \Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -999,6 +1019,7 @@ namespace PHPSTORM_META {
         'filesystem.disk' => \Illuminate\Filesystem\FilesystemAdapter::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
+        'image' => \Intervention\Image\ImageManager::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
@@ -1027,6 +1048,8 @@ namespace PHPSTORM_META {
     ]));
     override(\resolve(0), map([
         '' => '@',
+        'Alexusmai\LaravelFileManager\Services\ACLService\ACLRepository' => \Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository::class,
+        'Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository' => \Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository::class,
         'Illuminate\Broadcasting\BroadcastManager' => \Illuminate\Broadcasting\BroadcastManager::class,
         'Illuminate\Bus\Dispatcher' => \Illuminate\Bus\Dispatcher::class,
         'Illuminate\Console\Scheduling\Schedule' => \Illuminate\Console\Scheduling\Schedule::class,
@@ -1144,6 +1167,7 @@ namespace PHPSTORM_META {
         'filesystem.disk' => \Illuminate\Filesystem\FilesystemAdapter::class,
         'hash' => \Illuminate\Hashing\HashManager::class,
         'hash.driver' => \Illuminate\Hashing\BcryptHasher::class,
+        'image' => \Intervention\Image\ImageManager::class,
         'log' => \Illuminate\Log\LogManager::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,

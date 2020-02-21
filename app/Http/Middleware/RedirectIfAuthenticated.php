@@ -31,7 +31,7 @@ class RedirectIfAuthenticated
              * Перенаправление на страницу администратора
              */
 
-            elseif ($request->user()->hasRole(['investor'])) {
+            elseif ($request->user()->hasRole(['user'])) {
                 return redirect()->route('cabinet');
             }
         }
